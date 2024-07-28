@@ -6,7 +6,7 @@ const path = require('path');
 const server = new Koa();
 const router = new Router();
 
-// Serve static files from the build directory
+// Serve static files
 server.use(static(path.join(__dirname, '../client/dist')));
 
 // Your API routes would go here
